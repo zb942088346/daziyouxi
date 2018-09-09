@@ -1,0 +1,166 @@
+@import url(base.css);
+/*头部开始*/
+header{
+    width: 100%;
+    height: 8.89rem;
+    background: url("../img/scen.png");
+    background-size: 7.5rem 8.89rem;
+    overflow: hidden;
+    position: relative;
+}
+header div{
+    width: .44rem;
+    height: .74rem;
+    position: absolute;
+    background-size: .44rem .74rem;
+}
+body{
+    background-image: url("../img/qiang.png");
+}
+header .clound{
+    width: 4.95rem;
+    height: .56rem;
+    background: url("../img/clound_06.png");
+    background-size: contain;
+    position: fixed;
+    top: 1rem;
+    left: .7rem;
+    animation: clound 2s 1s linear infinite;
+}
+.right{
+    width: 1.24rem;
+    height: 7.5rem;
+    position: fixed;
+    top: 0;
+    right: .27rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.right li{
+    width: 1.22rem;
+    height: 1.22rem;
+    display: block;
+    margin-bottom: .13rem;
+}
+.right li:first-child{
+    width: .5rem;
+    height: .5rem;
+    margin-top: .5rem;
+    background-image: url("../img/Aplay.png");
+    background-size: .5rem .5rem;
+}
+.right li:nth-child(2){
+    margin-top: 2rem;
+    background-image: url("../img/Health.png");
+    background-size: 1.22rem 1.22rem;
+    font-size: .5rem;
+    text-align: center;
+}
+.right li:nth-child(3){
+    background-image: url("../img/Point.png");
+    background-size:1.22rem 1.22rem;
+    font-size: .5rem;
+    text-align: center;
+}
+.right li:nth-child(4){
+    background-image: url("../img/Play.png");
+    background-size:1.22rem 1.22rem;
+}
+/*头部结束*/
+/*底部开始*/
+footer{
+    width: 100%;
+    height: 4.45rem;
+    background: url("../img/Key.png");
+    background-size: 7.5rem 4.45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    width: 7rem;
+    height: 4rem;
+    background-color: rgba(0,0,255,0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer .con div{
+    width: .5rem;
+    height: .8rem;
+    background-image: url("../img/Letter.png");
+    background-size: 100%;
+    font-size: .4rem;
+    text-align: center;
+    line-height: .8rem;
+    color: #444444;
+    margin-right: .1rem;
+    margin-left: .1rem;
+}
+footer .con div:nth-child(11){
+  margin-left: .5rem;
+}
+/*底部借宿*/
+/*弹出开始*/
+.pop{
+    position: fixed;
+    top: 3.63rem;
+    left: .91rem;
+    width: 5.69rem;
+    height: 5.77rem;
+    background-image: url("../img/gameover.png");
+    background-size: 5.69rem 5.77rem;
+    display: none;
+}
+.show{
+    position: fixed;
+    top: 5.79rem;
+    left: .91rem;
+    /*width: 0rem;*/
+    /*height: 3.61rem;*/
+    box-shadow: 0 0rem .02rem 30rem rgba(0,0,0,0.8);
+    display: none;
+}
+.clound1{
+    width: 4.95rem;
+    height: .62rem;
+    background-image: url("../img/clound_06.png");
+    background-size: 4.95rem .62rem;
+    position: fixed;
+    top: 3.17rem;
+    left: 1.27rem;
+    display: none;
+}
+.pop .begin{
+    width: 2.64rem;
+    height: .6rem;
+    background-image: url("../img/btn.png");
+    background-size: 2.64rem .6rem;
+    position: absolute;
+    bottom: .58rem;
+    left: 1.55rem;
+}
+.pop .score{
+    width: 1.02rem;
+    height: .38rem;
+    font-size: .38rem;
+    color: #fff;
+    position: absolute;
+    bottom: 1.8rem;
+    left: 3rem;
+}
+/*弹出结束*/
+
+@keyframes clound{
+    0%{
+        left: .4rem;
+    }
+    50%{
+        left: 1.7rem;
+    }
+    100%{
+        left: .4rem;
+    }
+}
